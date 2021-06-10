@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+		<script type="text/javascript" src="javascript/jquery.js"></script>
+		<link rel="icon" type="../image/png" sizes="25x17" href="images/logo16x16.png">
+		<link rel="manifest" href="/manifest.json">
+        <title>HTTP Status Codes</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="javascript/scriptpagina.js"></script>
+		<script type="text/javascript" src="javascript/jquery.maskedinput.js"></script>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+    </head>
+    <body id="home" data-spy="scroll" data-target=".navbar" data-offset="60">
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title" id="tituloModal"></h4>
+                    </div>
+                    <div class="modal-body" id="textoModal">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="jumbotron">	
+			<div class="interna" style="background-color: #dddddd;" align="justify">
+                <div id="contact" class="container-fluid bg-grey">
+                    <div class="row">
+                        <div class="row">
+        					<div class="col-sm-12">
+				        		<h2 style="text-align: center;">
+                                    HTTP Status Codes
+                                </h2>
+                                <hr>
+                                <br>					
+        					</div>
+                        </div>
+                    </div>
+                    <div class="row" id="espacoInicio">
+                        <div class="row">
+        					<div class="col-sm-12">
+                                <h3>
+                                    "DESCRIÇÃO DO SITE"
+                                </h3>
+                                <hr>
+                                <br>					
+        					</div>
+                        </div>
+                        <div>
+                            <div class="col-sm-12">
+                                <div class="row">
+						    		<div class="col-sm-12 form-group" id = "botaoFiltrar">
+                                        <h4>
+                                            <button class="buttonStartGame" onclick="AbreFiltragem()">Filtrar</button>
+                                            <br>
+                                            <button class="buttonStartGame" id="listarCodigos" onclick="Listar()">ListarCodigos</button>
+                                        </h4>
+                                    </div>
+							    </div>
+							    <div class="row">
+						    		<div class="col-sm-12 form-group" id = "filtrar" hidden = true>
+                                        <h4>
+                                            <input class="form-control" id="statusCode" name="statusCode" placeholder="Status Code" type="text" required>
+                                            <br>
+                                            <button class="buttonStartGame" onclick="BuscarStatusCode()">Buscar</button>
+                                        </h4>
+                                    </div>
+							    </div>
+							</div>                            
+                        </div>
+                    </div>
+                    <div class="row" id="listaStatusCode">
+                        
+                    </div>
+                        
+                    </div>
+			    </div>
+            </div>
+            <footer  class="bg-grey" style="text-align: center;">
+                SunSale System
+            </footer>
+		</div>
+    </body>
+</html>
+
+<script>
+    document.getElementById('espacoInicio').hidden = false;
+    document.getElementById('listaStatusCode').hidden = true;
+    document.getElementById('filtrar').hidden = true;
+    
+    var listaStatus = CriarContas(); 
+
+    function AbreFiltragem(){
+        // Deve sumir o botão Listar códigos e apresentar os filtros
+    }
+
+    function Listar(){
+        //Montar a lista 'listaStatus' e disponibilizar ela na tela no div 'listaStatusCode' e esconder o div 'espacoInicio'
+    }
+
+    function BuscarStatusCode(){
+        // Deve buscar o filtro que o usuário digitou em 'statusCode' e montar a lista no div 'listaStatusCode' com o status, ou apresentar uma mensagem caso o código não exista
+    }
+
+    function alerta(mensagem){
+        AbrirModal("Alerta", mensagem);
+    }
+
+    function AbrirModal(tituloModal, textoModal){
+        var titulo = document.querySelector('#tituloModal');
+        var texto = document.querySelector('#textoModal');
+
+        titulo.innerHTML = '';
+        titulo.innerHTML = tituloModal;
+        texto.innerHTML = '';
+        texto.innerHTML = '<p>' + textoModal + '</p>';
+        
+        $("#myModal").modal();
+    }
+
+</script>
