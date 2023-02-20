@@ -34,13 +34,16 @@
             </div>
         </div>
         <div class="jumbotron">	
-			<div class="interna" style="background-color: #dddddd;" align="justify">
+			<div class="interna" style="background-color: #ffffff;" align="justify">
                 <div id="contact" class="container-fluid bg-grey">
                     <div class="row">
                         <div class="row">
         					<div class="col-sm-12">
 				        		<h2 style="text-align: center;">
-                                    HTTP Status Codes
+                                    HTTP - STATUS CODE
+                                    <h5>
+                                        Descubra o que cada código HTTP significa
+                                    </h5>
                                 </h2>
                                 <hr>
                                 <br>					
@@ -50,9 +53,109 @@
                     <div class="row" id="espacoInicio">
                         <div class="row">
         					<div class="col-sm-12">
-                                <h3>
-                                    "DESCRIÇÃO DO SITE"
-                                </h3>
+                                <h5>
+                                    Listas de status HTTP, todas as referências e definições em um único lugar
+                                    <h3 class="textoInicial">
+                                        Glossário de códigos:
+                                    </h3>
+                                <div class="CorpoPrincipal">
+                                    <div class="glossario">
+
+                                        <details class="INFOS">
+                                            <summary> INFORMACIONAL - 1xx </summary>
+                                                <div class="internos">
+                                                    <ul>100 - Continue</ul>
+                                                    <ul>101 - Protocolos De Comutação</ul>
+                                                    <ul>102 - Processamento</ul>
+                                                </div>
+                                        </details>
+
+                                        <details class="SUCESS">
+                                                <summary> SUCESSO - 2xx </summary>
+                                                <div class="internos">
+                                                    <ul>200 - Ok</ul>
+                                                    <ul>201 - Criado</ul>
+                                                    <ul>202 - Aceito</ul>
+                                                    <ul>203 - Informações Não Autorizadas</ul>
+                                                    <ul>204 - Sem Conteúdo</ul>
+                                                    <ul>205 - Redefinir Conteúdo</ul>
+                                                    <ul>206 - Conteúdo Parcial</ul>
+                                                    <ul>207 - Vários Status</ul>
+                                                    <ul>208 - Já Reportado</ul>
+                                                    <ul>226 - IM Usado</ul>
+                                                </div>    
+                                        </details>
+
+                                        <details class="REDIRECIONAMENTO">
+                                            <summary> REDIRECIONAMENTO - 3xx </summary>
+                                                <div class="internos">
+                                                    <ul>300 - Escolhas Múltiplas</ul>
+                                                    <ul>301 - Permanentemente Movido</ul>
+                                                    <ul>302 - Encontrado</ul>
+                                                    <ul>303 - Veja Outro</ul>
+                                                    <ul>304 - Não Modificado</ul>
+                                                    <ul>305 - Use Proxy</ul>
+                                                    <ul>306 - Redirecionado Temporariamente</ul>
+                                                    <ul>307 - Redirecionado Permanentemente</ul>
+                                                </div>
+                                        </details>
+
+                                        <details class="ERRO_CLIENTE">
+                                            <summary> ERRO DE CLIENT - 4xx </summary>
+                                                <div class="internos">
+                                                    <ul>400 - Má Requisição</ul>
+                                                    <ul>401 - Não Autorizado</ul>
+                                                    <ul>402 - Pagamento Requirido</ul>
+                                                    <ul>403 - Proibido</ul>
+                                                    <ul>404 - Não Encontrado</ul>
+                                                    <ul>405 - Método Não Permitido</ul>
+                                                    <ul>406 - Não Aceito</ul>
+                                                    <ul>407 - Autorização De Proxy Requirida</ul>
+                                                    <ul>408 - Tempo Limite de Autenticação</ul>
+                                                    <ul>409 - Conflito</ul>
+                                                    <ul>410 - Sumido</ul>
+                                                    <ul>411 - Comprimento Obrigatório</ul>
+                                                    <ul>412 - Pré-condição Falhou</ul>
+                                                    <ul>413 - Carga Útil Muito Larga</ul>
+                                                    <ul>414 - URL Requirida É Longa</ul>
+                                                    <ul>415 - Tipo de Mídia Muito Não Suportado</ul>
+                                                    <ul>416 - Intervalo Solicitado Não Satisfatível</ul>
+                                                    <ul>417 - Expectativa Falhou</ul>
+                                                    <ul>418 - "Bule de Chá"</ul>
+                                                    <ul>421 - Solicitação Incorreta</ul>
+                                                    <ul>422 - Entidade Não Processada</ul>
+                                                    <ul>423 - Bloqueado/Trancado</ul>
+                                                    <ul>424 - Falha de Dependência</ul>
+                                                    <ul>426 - Atualização Requerida</ul>
+                                                    <ul>428 - Pré-condição Requerida</ul>
+                                                    <ul>429 - Muitas Requisições</ul>
+                                                    <ul>431 - Campos de Cabeçalho de Solicitação Muito Grandes</ul>
+                                                    <ul>444 - Conexão Fechada Sem Resposta</ul>
+                                                    <ul>451 - Indisponível por Razões Legais</ul>
+                                                    <ul>499 - Solicitação de Fechamento do Cliente</ul>
+                                                </div>
+                                        </details>
+
+                                            <details class="ERRO_SERVIDOR">
+                                                <summary> ERRO DE SERVIDOR - 5xx </summary>
+                                                <div class="internos">
+                                                    <ul>500 - Erro Interno de Servidor</ul>
+                                                    <ul>501 - Não Implementado</ul>
+                                                    <ul>502 - Gateway Incorreto</ul>
+                                                    <ul>503 - Serviço Indisponível</ul>
+                                                    <ul>504 - Gateway Espirou</ul>
+                                                    <ul>505 - Versão HTTP Não Suportada</ul>
+                                                    <ul>506 - Variante também Não Negociada</ul>
+                                                    <ul>507 - Armazenamento Insuficiente</ul>
+                                                    <ul>508 - Loop Detectado</ul>
+                                                    <ul>510 - Não Estendido</ul>
+                                                    <ul>511 - Autenticação de Internet Requesitada</ul>
+                                                    <ul>599 - Erro de Tempo Limite de Conexão de Rede</ul>
+                                                </div>
+                                            </details>
+                                    </div>
+                                </div>
+                                </h5>
                                 <hr>
                                 <br>					
         					</div>
@@ -62,9 +165,9 @@
                                 <div class="row">
 						    		<div class="col-sm-12 form-group" id = "botaoFiltrar">
                                         <h4>
-                                            <button class="buttonStartGame" onclick="AbreFiltragem()">Filtrar</button>
+                                            <button class="buttonStartGame" onclick="AbreFiltragem()">FILTRO</button>
                                             <br>
-                                            <button class="buttonStartGame" id="listarCodigos" onclick="Listar()">ListarCodigos</button>
+                                            <button class="buttonStartGame" id="listarCodigos" onclick="Listar()">LISTA</button>
                                         </h4>
                                     </div>
 							    </div>

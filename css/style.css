@@ -3,7 +3,7 @@ body {
     line-height: 1.8;
     color: #818181;
 }
-h1, h2, h3 {
+h1, h2, h3, h5 {
     text-transform: uppercase;
     color: #303030;
     font-weight: 600;
@@ -16,9 +16,14 @@ h4 {
     font-weight: 400;
     margin-bottom: 30px;
 }  
+h5{
+
+    text-align: center;
+
+}
 .jumbotron {
-    background-color: #003366;
-    color: #fff;
+    background-image: linear-gradient(rgb(0, 0, 255), rgb(154, 132, 242));
+    color: #ffffff;
     padding: 100px 25px;
     font-family: Montserrat, sans-serif;
 }
@@ -26,7 +31,7 @@ h4 {
     padding: 60px 50px;
 }
 .bg-grey {
-    background-color: #f6f6f6;
+    background-color: #ffffff;
 }
 .ClinicaJonasGabriela {
     color: #003366;
@@ -140,6 +145,53 @@ footer .glyphicon {
     -webkit-animation-duration: 3s;
     visibility: visible;
 }
+.textoInicial{
+
+    text-align: center;
+
+}
+.glossario{
+
+    color: black;
+
+}
+.INFOS{
+
+    font-size: 15px;
+    cursor: pointer;
+    
+}
+.SUCESS{
+
+    font-size: 15px;
+    cursor: pointer;
+
+}
+.REDIRECIONAMENTO{
+
+    font-size: 15px;
+    cursor: pointer;
+
+}
+.ERRO_CLIENTE{
+
+    font-size: 15px;
+    cursor: pointer;
+    
+}
+.ERRO_SERVIDOR{
+    
+    font-size: 15px;
+    cursor: pointer;
+
+}
+.internos{
+
+    font-size: small;
+    text-align:left;
+    cursor: pointer;
+}
+
 @keyframes slide {
     0% {
         opacity: 0;
@@ -222,9 +274,11 @@ code {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
+    margin: 4px 4px;
     cursor: pointer;
-    background-color: #4CAF50;
+    background-color: #4c6baf;
+    display: flex;
+    justify-content: space-between;
 }
 
 .buttonInicio {
