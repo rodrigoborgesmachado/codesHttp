@@ -64,7 +64,7 @@
                                         <details class="INFOS">
                                             <summary> INFORMACIONAL - 1xx </summary>
                                                 <div class="internos">
-                                                    <ul>100 - Continue</ul>
+                                                    <ul onclick="AbrirModal('TESTE', 'TESTE')">100 - Continue</ul>
                                                     <ul>101 - Protocolos De Comutação</ul>
                                                     <ul>102 - Processamento</ul>
                                                 </div>
@@ -160,28 +160,6 @@
                                 <br>					
         					</div>
                         </div>
-                        <div>
-                            <div class="col-sm-12">
-                                <div class="row">
-						    		<div class="col-sm-12 form-group" id = "botaoFiltrar">
-                                        <h4>
-                                            <button class="buttonStartGame" onclick="AbreFiltragem()">FILTRO</button>
-                                            <br>
-                                            <button class="buttonStartGame" id="listarCodigos" onclick="Listar()">LISTA</button>
-                                        </h4>
-                                    </div>
-							    </div>
-							    <div class="row">
-						    		<div class="col-sm-12 form-group" id = "filtrar" hidden = true>
-                                        <h4>
-                                            <input class="form-control" id="statusCode" name="statusCode" placeholder="Status Code" type="text" required>
-                                            <br>
-                                            <button class="buttonStartGame" onclick="BuscarStatusCode()">Buscar</button>
-                                        </h4>
-                                    </div>
-							    </div>
-							</div>                            
-                        </div>
                     </div>
                     <div class="row" id="listaStatusCode">
                         
@@ -203,22 +181,6 @@
     document.getElementById('filtrar').hidden = true;
     
     var listaStatus = CriarContas(); 
-
-    function AbreFiltragem(){
-        // Deve sumir o botão Listar códigos e apresentar os filtros
-    }
-
-    function Listar(){
-        //Montar a lista 'listaStatus' e disponibilizar ela na tela no div 'listaStatusCode' e esconder o div 'espacoInicio'
-    }
-
-    function BuscarStatusCode(){
-        // Deve buscar o filtro que o usuário digitou em 'statusCode' e montar a lista no div 'listaStatusCode' com o status, ou apresentar uma mensagem caso o código não exista
-    }
-
-    function alerta(mensagem){
-        AbrirModal("Alerta", mensagem);
-    }
 
     function AbrirModal(tituloModal, textoModal){
         var titulo = document.querySelector('#tituloModal');
