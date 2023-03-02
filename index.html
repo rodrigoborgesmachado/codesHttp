@@ -33,8 +33,9 @@
                 </div>
             </div>
         </div>
+        <div style="background-image:url(https://th.bing.com/th/id/R.a2dfb293df018a51b282ceef4324ae13?rik=BUBitGK829osOA&pid=ImgRaw&r=0);"></div>
         <div class="jumbotron">	
-			<div class="interna" style="background-color: #ffffff;" align="justify">
+			<div class="interna" style="background-color: #ffffff;" align="justify" >
                 <div id="contact" class="container-fluid bg-grey">
                     <div class="row">
                         <div class="row">
@@ -43,6 +44,8 @@
                                     HTTP - STATUS CODE
                                     <h5>
                                         Descubra o que cada código HTTP significa
+                                        <br>
+                                        Listas de status HTTP, todas as referências e definições em um único lugar
                                     </h5>
                                 </h2>
                                 <hr>
@@ -54,106 +57,102 @@
                         <div class="row">
         					<div class="col-sm-12">
                                 <h5>
-                                    Listas de status HTTP, todas as referências e definições em um único lugar
                                     <h3 class="textoInicial">
                                         Glossário de códigos:
                                     </h3>
                                 <div class="CorpoPrincipal">
-                                    <div class="glossario">
-
                                         <details class="INFOS">
-                                            <summary> INFORMACIONAL - 1xx </summary>
+                                                <summary style="color: black"> INFORMACIONAL - 1xx </summary>
                                                 <div class="internos">
-                                                    <ul onclick="AbrirModal('TESTE', 'TESTE')">100 - Continue</ul>
-                                                    <ul>101 - Protocolos De Comutação</ul>
-                                                    <ul>102 - Processamento</ul>
+                                                    <ul onclick="AbrirModal('100', 'A parte inicial de uma solicitação foi recebida e ainda não foi rejeitada pelo servidor. O servidor pretende enviar uma resposta final após a solicitação ter sido totalmente recebida e atendida.')">100 - Continue</ul>
+                                                    <ul onclick="AbrirModal('101', 'O servidor entende e está disposto a atender à solicitação do cliente, por meio do campo 1 do cabeçalho Upgrade, para uma alteração no protocolo de aplicativo que está sendo usado nessa conexão.')">101 - Protocolos De Comutação</ul>
+                                                    <ul onclick="AbrirModal('102', ' Uma resposta provisória usada para informar ao cliente que o servidor aceitou a solicitação completa, mas ainda não a concluiu.')">102 - Processamento</ul>
                                                 </div>
                                         </details>
 
                                         <details class="SUCESS">
-                                                <summary> SUCESSO - 2xx </summary>
+                                                <summary style="color:black"> SUCESSO - 2xx </summary>
                                                 <div class="internos">
-                                                    <ul>200 - Ok</ul>
-                                                    <ul>201 - Criado</ul>
-                                                    <ul>202 - Aceito</ul>
-                                                    <ul>203 - Informações Não Autorizadas</ul>
-                                                    <ul>204 - Sem Conteúdo</ul>
-                                                    <ul>205 - Redefinir Conteúdo</ul>
-                                                    <ul>206 - Conteúdo Parcial</ul>
-                                                    <ul>207 - Vários Status</ul>
-                                                    <ul>208 - Já Reportado</ul>
-                                                    <ul>226 - IM Usado</ul>
+                                                    <ul onclick="AbrirModal('200', 'O pedido foi bem sucedido.')">200 - Ok</ul>
+                                                    <ul onclick="AbrirModal('201', 'O pedido foi satisfeito e resultou na criação de um ou mais novos recursos.')">201 - Criado</ul>
+                                                    <ul onclick="AbrirModal('202', 'O pedido foi aceito para processamento, mas o processamento não foi concluído. O pedido poderá ou não ser eventualmente atendido, uma vez que poderá ser recusado quando o processamento tiver efetivamente um lugar.')">202 - Aceito</ul>
+                                                    <ul onclick="AbrirModal('203', 'O pedido foi bem sucedido, mas a carga útil incluída foi modificada a partir da resposta de 200 OK do servidor de origem por um proxy transformador')">203 - Informações Não Autorizadas</ul>
+                                                    <ul onclick="AbrirModal('204', 'O servidor cumpriu com sucesso o pedido e que não existe conteúdo adicional para enviar o corpo de carga útil de resposta.')">204 - Sem Conteúdo</ul>
+                                                    <ul onclick="AbrirModal('205', 'O servidor cumpriu o pedido e deseja que o agente do utilizador reinicie a vista do documento, o que provocou o envio do pedido, para o seu estado original tal como recebido do servidor de origem.')">205 - Redefinir Conteúdo</ul>
+                                                    <ul onclick="AbrirModal('206', 'O servidor está a cumprir com sucesso um pedido de intervalo para o recurso alvo, transferindo uma ou mais partes da representação seleccionada que correspondem aos intervalos satisfatórios encontrados no campo de cabeçalho de intervalo do pedido')">206 - Conteúdo Parcial</ul>
+                                                    <ul onclick="AbrirModal('207', 'Uma resposta Multi-Status transmite informação sobre múltiplos recursos em situações em que múltiplos códigos de estado podem ser apropriados.')">207 - Vários Status</ul>
+                                                    <ul onclick="AbrirModal('208', 'Utilizado dentro de um DAV: elemento de resposta propstat para evitar enumerar repetidamente os membros internos de múltiplas ligações a uma mesma colecção.')">208 - Já Reportado</ul>
+                                                    <ul onclick="AbrirModal('209', 'O servidor cumpriu um pedido GET para o recurso, e a resposta é uma representação do resultado de uma ou mais instâncias-manipulações aplicadas à instância actual.')">226 - IM Usado</ul>
                                                 </div>    
                                         </details>
 
                                         <details class="REDIRECIONAMENTO">
-                                            <summary> REDIRECIONAMENTO - 3xx </summary>
+                                            <summary style="color:black"> REDIRECIONAMENTO - 3xx </summary>
                                                 <div class="internos">
-                                                    <ul>300 - Escolhas Múltiplas</ul>
-                                                    <ul>301 - Permanentemente Movido</ul>
-                                                    <ul>302 - Encontrado</ul>
-                                                    <ul>303 - Veja Outro</ul>
-                                                    <ul>304 - Não Modificado</ul>
-                                                    <ul>305 - Use Proxy</ul>
-                                                    <ul>306 - Redirecionado Temporariamente</ul>
-                                                    <ul>307 - Redirecionado Permanentemente</ul>
+                                                    <ul onclick="AbrirModal('300', 'O recurso alvo tem mais de uma representação, cada um com o seu próprio identificador mais específico, e está a ser fornecida informação sobre as alternativas para que o utilizador (ou agente do utilizador) possa seleccionar uma representação preferida, redireccionando o seu pedido para um ou mais desses identificadores.')">300 - Escolhas Múltiplas</ul>
+                                                    <ul onclick="AbrirModal('301', 'Foi atribuído um novo URI permanente ao recurso alvo e quaisquer referências futuras a este recurso deverão utilizar um dos URIs anexos.')">301 - Permanentemente Movido</ul>
+                                                    <ul onclick="AbrirModal('302', 'O recurso alvo reside temporariamente sob um URI diferente. Uma vez que o redireccionamento pode ser alterado ocasionalmente, o cliente deve continuar a utilizar o URI de pedido efectivo para pedidos futuros.')">302 - Encontrado</ul>
+                                                    <ul onclick="AbrirModal('303', 'O servidor está a redireccionar o agente utilizador para um recurso diferente, conforme indicado por um URI no campo de cabeçalho Localização, que se destina a fornecer uma resposta indirecta ao pedido original.')">303 - Veja Outro</ul>
+                                                    <ul onclick="AbrirModal('304', 'Um pedido condicional de GET ou HEAD foi recebido e teria resultado numa resposta de 200 OK se não fosse o facto de a condição avaliada ser falsa.')">304 - Não Modificado</ul>
+                                                    <ul onclick="AbrirModal('305', 'Definido numa versão anterior desta especificação e é agora depreciado, devido a preocupações de segurança relativas à configuração em banda de um proxy.')">305 - Use Proxy</ul>
+                                                    <ul onclick="AbrirModal('307', 'O recurso alvo reside temporariamente sob um URI diferente e o agente utilizador NÃO PODE alterar o método de pedido se efectuar um redireccionamento automático para esse URI.')">307 - Redirecionado Temporariamente</ul>
+                                                    <ul onclick="AbrirModal('308', 'Foi atribuído um novo URI permanente ao recurso alvo e quaisquer referências futuras a este recurso deverão utilizar um dos URIs anexos.')">308 - Redirecionado Permanentemente</ul>
                                                 </div>
                                         </details>
 
                                         <details class="ERRO_CLIENTE">
-                                            <summary> ERRO DE CLIENT - 4xx </summary>
+                                            <summary style="color: black"> ERRO DE CLIENT - 4xx </summary>
                                                 <div class="internos">
-                                                    <ul>400 - Má Requisição</ul>
-                                                    <ul>401 - Não Autorizado</ul>
-                                                    <ul>402 - Pagamento Requirido</ul>
-                                                    <ul>403 - Proibido</ul>
-                                                    <ul>404 - Não Encontrado</ul>
-                                                    <ul>405 - Método Não Permitido</ul>
-                                                    <ul>406 - Não Aceito</ul>
-                                                    <ul>407 - Autorização De Proxy Requirida</ul>
-                                                    <ul>408 - Tempo Limite de Autenticação</ul>
-                                                    <ul>409 - Conflito</ul>
-                                                    <ul>410 - Sumido</ul>
-                                                    <ul>411 - Comprimento Obrigatório</ul>
-                                                    <ul>412 - Pré-condição Falhou</ul>
-                                                    <ul>413 - Carga Útil Muito Larga</ul>
-                                                    <ul>414 - URL Requirida É Longa</ul>
-                                                    <ul>415 - Tipo de Mídia Muito Não Suportado</ul>
-                                                    <ul>416 - Intervalo Solicitado Não Satisfatível</ul>
-                                                    <ul>417 - Expectativa Falhou</ul>
-                                                    <ul>418 - "Bule de Chá"</ul>
-                                                    <ul>421 - Solicitação Incorreta</ul>
-                                                    <ul>422 - Entidade Não Processada</ul>
-                                                    <ul>423 - Bloqueado/Trancado</ul>
-                                                    <ul>424 - Falha de Dependência</ul>
-                                                    <ul>426 - Atualização Requerida</ul>
-                                                    <ul>428 - Pré-condição Requerida</ul>
-                                                    <ul>429 - Muitas Requisições</ul>
-                                                    <ul>431 - Campos de Cabeçalho de Solicitação Muito Grandes</ul>
-                                                    <ul>444 - Conexão Fechada Sem Resposta</ul>
-                                                    <ul>451 - Indisponível por Razões Legais</ul>
-                                                    <ul>499 - Solicitação de Fechamento do Cliente</ul>
+                                                    <ul onclick="AbrirModal('400', 'O servidor não pode ou não irá processar o pedido devido a algo que é percebido como sendo um erro do cliente (por exemplo, sintaxe de pedido malformado, enquadramento de mensagem de pedido inválido, ou encaminhamento de pedido enganoso).')">400 - Má Requisição</ul>
+                                                    <ul onclick="AbrirModal('401', 'O pedido não foi aplicado porque não possui credenciais de autenticação válidas para o recurso alvo.')">401 - Não Autorizado</ul>
+                                                    <ul onclick="AbrirModal('402', 'Reservado para utilização futura.')">402 - Pagamento Requirido</ul>
+                                                    <ul onclick="AbrirModal('403', 'O servidor compreendeu o pedido mas recusa-se a autorizá-lo.')">403 - Proibido</ul>
+                                                    <ul onclick="AbrirModal('404', 'O servidor de origem não encontrou uma representação actual para o recurso alvo ou não está disposto a revelar que este existe.')">404 - Não Encontrado</ul>
+                                                    <ul onclick="AbrirModal('405', 'O método recebido na linha de pedido é conhecido pelo servidor de origem, mas não é suportado pelo recurso alvo.')">405 - Método Não Permitido</ul>
+                                                    <ul onclick="AbrirModal('406', 'O recurso alvo não tem uma representação actual que seria aceitável para o agente utilizador, de acordo com os campos de cabeçalho de negociação proactivos recebidos no pedido1, e o servidor não está disposto a fornecer uma representação por defeito.')">406 - Não Aceito</ul>
+                                                    <ul onclick="AbrirModal('407', 'Semelhante ao 401 Não autorizado, mas indica que o cliente precisa de se autenticar para poder utilizar um proxy.')">407 - Autorização De Proxy Requirida</ul>
+                                                    <ul onclick="AbrirModal('408', 'O servidor não recebeu uma mensagem de pedido completa dentro do tempo em que estava preparado para esperar.')">408 - Tempo Limite de Autenticação</ul>
+                                                    <ul onclick="AbrirModal('409', 'O pedido não pôde ser completado devido a um conflito com o estado actual do recurso alvo. Este código é utilizado em situações em que o utilizador poderia ser capaz de resolver o conflito e voltar a submeter o pedido.')">409 - Conflito</ul>
+                                                    <ul onclick="AbrirModal('410', 'O recurso alvo já não está disponível no servidor de origem e que esta condição é susceptível de ser permanente.')">410 - Sumido</ul>
+                                                    <ul onclick="AbrirModal('411', 'O servidor recusa-se a aceitar o pedido sem um Content-Length1 definido.')">411 - Comprimento Obrigatório</ul>
+                                                    <ul onclick="AbrirModal('412', 'Uma ou mais condições dadas nos campos do cabeçalho do pedido avaliadas como falsas quando testadas no servidor.')">412 - Pré-condição Falhou</ul>
+                                                    <ul onclick="AbrirModal('413', 'O servidor recusa-se a processar um pedido porque a carga útil do pedido é maior do que o servidor está disposto ou é capaz de processar.')">413 - Carga Útil Muito Larga</ul>
+                                                    <ul onclick="AbrirModal('414', 'O servidor recusa-se a atender o pedido porque o alvo do pedido1 é mais longo do que o servidor está disposto a interpretar.')">414 - URL Requirida É Longa</ul>
+                                                    <ul onclick="AbrirModal('415', 'O servidor de origem recusa-se a servir o pedido porque a carga útil está num formato não suportado por este método no recurso alvo.')">415 - Tipo de Mídia Muito Não Suportado</ul>
+                                                    <ul onclick="AbrirModal('416', 'Nenhum dos intervalos no campo de cabeçalho de intervalo1 do pedido sobrepõe-se à extensão actual do recurso seleccionado ou que o conjunto de intervalos solicitados foi rejeitado devido a intervalos inválidos ou a um pedido excessivo de intervalos pequenos ou sobrepostos.')">416 - Intervalo Solicitado Não Satisfatível</ul>
+                                                    <ul onclick="AbrirModal('417', 'A expectativa dada no campo de cabeçalho Expectar1 do pedido não pôde ser satisfeita por pelo menos um dos servidores de entrada.')">417 - Expectativa Falhou</ul>
+                                                    <ul onclick="AbrirModal('418', 'Qualquer tentativa de preparar café com bule deve resultar no código de erro 418 Im a teapot. O corpo da entidade resultante PODE ser curto e robusto.')">418 - "Bule de Chá"</ul>
+                                                    <ul onclick="AbrirModal('421', 'O pedido foi dirigido a um servidor que não é capaz de produzir uma resposta. Isto pode ser enviado por um servidor que não esteja configurado para produzir respostas para a combinação de esquema e autoridade que estão incluídas no pedido URI.')">421 - Solicitação Incorreta</ul>
+                                                    <ul onclick="AbrirModal('422', 'O servidor compreende o tipo de conteúdo da entidade do pedido (daí um código de estado 415 Unsupported Media Type ser inadequado), e a sintaxe da entidade do pedido é correcta (daí um código de estado 400 Bad Request ser inadequado), mas não foi capaz de processar as instruções contidas.')">422 - Entidade Não Processada</ul>
+                                                    <ul onclick="AbrirModal('423', 'O recurso de origem ou de destino de um método está bloqueado.')">423 - Bloqueado/Trancado</ul>
+                                                    <ul onclick="AbrirModal('424', 'O método não pôde ser executado no recurso porque a acção solicitada dependia de outra acção e essa acção falhou.')">424 - Falha de Dependência</ul>
+                                                    <ul onclick="AbrirModal('426', 'O servidor recusa-se a executar o pedido utilizando o protocolo actual, mas pode estar disposto a fazê-lo após a actualização do cliente para um protocolo diferente.')">426 - Atualização Requerida</ul>
+                                                    <ul onclick="AbrirModal('428', 'O servidor de origem exige que o pedido seja condicional.')">428 - Pré-condição Requerida</ul>
+                                                    <ul onclick="AbrirModal('429', 'O utilizador enviou demasiados pedidos num determinado período de tempo (limitação da taxa).')">429 - Muitas Requisições</ul>
+                                                    <ul onclick="AbrirModal('431', 'O servidor não está disposto a processar o pedido porque os seus campos de cabeçalho são demasiado grandes. O pedido PODE ser reapresentado após a redução do tamanho dos campos de cabeçalho do pedido.')">431 - Campos de Cabeçalho de Solicitação Muito Grandes</ul>
+                                                    <ul onclick="AbrirModal('444', 'Um código de estado não normalizado utilizado para instruir o nginx a fechar a ligação sem enviar uma resposta ao cliente, mais comumente utilizado para negar pedidos maliciosos ou mal formados.')">444 - Conexão Fechada Sem Resposta</ul>
+                                                    <ul onclick="AbrirModal('451', 'O servidor nega o acesso ao recurso como consequência de uma exigência legal.')">451 - Indisponível por Razões Legais</ul>
+                                                    <ul onclick="AbrirModal('499', 'Um código de estado não normalizado introduzido pelo nginx para o caso em que um cliente fecha a ligação enquanto o nginx está a processar o pedido.')">499 - Solicitação de Fechamento do Cliente</ul>
                                                 </div>
                                         </details>
 
                                             <details class="ERRO_SERVIDOR">
-                                                <summary> ERRO DE SERVIDOR - 5xx </summary>
+                                                <summary style="color: black;"> ERRO DE SERVIDOR - 5xx </summary>
                                                 <div class="internos">
-                                                    <ul>500 - Erro Interno de Servidor</ul>
-                                                    <ul>501 - Não Implementado</ul>
-                                                    <ul>502 - Gateway Incorreto</ul>
-                                                    <ul>503 - Serviço Indisponível</ul>
-                                                    <ul>504 - Gateway Espirou</ul>
-                                                    <ul>505 - Versão HTTP Não Suportada</ul>
-                                                    <ul>506 - Variante também Não Negociada</ul>
-                                                    <ul>507 - Armazenamento Insuficiente</ul>
-                                                    <ul>508 - Loop Detectado</ul>
-                                                    <ul>510 - Não Estendido</ul>
-                                                    <ul>511 - Autenticação de Internet Requesitada</ul>
-                                                    <ul>599 - Erro de Tempo Limite de Conexão de Rede</ul>
+                                                    <ul onclick="AbrirModal('500', 'O servidor encontrou uma condição inesperada que o impediu de satisfazer o pedido.')">500 - Erro Interno de Servidor</ul>
+                                                    <ul onclick="AbrirModal('501', 'O servidor não suporta a funcionalidade necessária para satisfazer o pedido.')">501 - Não Implementado</ul>
+                                                    <ul onclick="AbrirModal('502', 'O servidor, enquanto actuava como gateway ou proxy, recebeu uma resposta inválida de um servidor de entrada ao qual acedeu enquanto tentava cumprir o pedido.')">502 - Gateway Incorreto</ul>
+                                                    <ul onclick="AbrirModal('503', 'O servidor está actualmente incapaz de tratar o pedido devido a uma sobrecarga temporária ou manutenção programada, que provavelmente será aliviada após algum atraso.')">503 - Serviço Indisponível</ul>
+                                                    <ul onclick="AbrirModal('504', 'O servidor, embora actuando como gateway ou proxy, não recebeu uma resposta atempada de um servidor a montante ao qual necessitava de aceder para completar o pedido.')">504 - Gateway Espirou</ul>
+                                                    <ul onclick="AbrirModal('505', 'O servidor não suporta, ou recusa-se a suportar, a versão principal do HTTP que foi utilizada na mensagem de pedido.')">505 - Versão HTTP Não Suportada</ul>
+                                                    <ul onclick="AbrirModal('506', 'O servidor tem um erro de configuração interna: o recurso da variante escolhida é configurado para se envolver numa negociação transparente do próprio conteúdo, não sendo, portanto, um ponto final adequado no processo de negociação.')">506 - Variante também Não Negociada</ul>
+                                                    <ul onclick="AbrirModal('507', 'O servidor tem um erro de configuração interna: o recurso de variante escolhido está configurado para se envolver numa negociação transparente de conteúdo em si, não sendo, portanto, um ponto final adequado no processo de negociação.')">507 - Armazenamento Insuficiente</ul>
+                                                    <ul onclick="AbrirModal('508', 'O servidor terminou uma operação porque encontrou um loop infinito durante o processamento de um pedido com Profundidade: infinito. Este estado indica que toda a operação falhou.')">508 - Loop Detectado</ul>
+                                                    <ul onclick="AbrirModal('510', 'A política de acesso ao recurso não foi cumprida no pedido. O servidor deve enviar de volta toda a informação necessária para que o cliente possa emitir um pedido alargado.')">510 - Não Estendido</ul>
+                                                    <ul onclick="AbrirModal('511', 'O cliente precisa de se autenticar para obter acesso à rede.')">511 - Autenticação de Internet Requesitada</ul>
+                                                    <ul onclick="AbrirModal('599', 'Este código de estado não é especificado em nenhum RFC mas é utilizado por alguns proxies HTTP para assinalar um timeout de ligação de rede atrás do proxy a um cliente em frente do proxy.')">599 - Erro de Tempo Limite de Conexão de Rede</ul>
                                                 </div>
                                             </details>
-                                    </div>
                                 </div>
                                 </h5>
                                 <hr>
