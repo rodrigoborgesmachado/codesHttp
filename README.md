@@ -1,3 +1,3 @@
 # Code Status
 
-**Web site disponível em http://tabuadadivertida.sunsalesystem.com.br/**
+**Web site disponível em [codes](https://codeshttp.netlify.app/)**
